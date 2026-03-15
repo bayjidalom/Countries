@@ -1,18 +1,33 @@
 import React from 'react';
+import './Country.css'
 
 const Country = ({ country }) => {
-    console.log(country)
+    console.log(country.area.area)
+
+    const handler = () => {
+        console.log("Button Clicked.")
+    }
     return (
-        <div className='card'>
-            <img src={country.flags?.flags?.png} alt={country.flags.flags.alt} />
+        <div className='country'>
+            <img className='' src={country.flags?.flags?.png} alt={country.flags.flags.alt} />
             <h3>Name : {country.name.common} </h3>
-            {/* <h4>Main : {country.name.official}</h4> */}
             <p>Population : {country.population.population}</p>
             <p>Region : {country.region.region}</p>
-            <p>Capital : {country.capital.capital}</p>
+            {/* <p>Capital : {country.capital.capital}</p> */}
+            <p>Area : {country.area.area} - {country.area.area > 30000 ? "Big Country" : "Small country"}</p>
+
+            <button onClick={handler}> Not visited</button>
 
         </div>
     );
 };
 
 export default Country;
+
+
+
+
+/**CSS 4 ways
+ * 1. inline css (style object)
+ * 2. 
+ */
