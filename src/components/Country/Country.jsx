@@ -2,14 +2,14 @@ import React from 'react';
 import './Country.css'
 
 const Country = ({ country }) => {
-    console.log(country.area.area)
+    // console.log(country.area.area)
 
     const handler = () => {
         console.log("Button Clicked.")
     }
     return (
         <div className='country'>
-            <img className='' src={country.flags?.flags?.png} alt={country.flags.flags.alt} />
+            <img className='img' src={country.flags?.flags?.png} alt={country.flags.flags.alt} />
             <h3>Name : {country.name.common} </h3>
             <p>Population : {country.population.population}</p>
             <p>Region : {country.region.region}</p>

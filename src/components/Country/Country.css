@@ -1,15 +1,12 @@
 .country {
-    border: 2px solid #ffd700;
+    border: 2px solid aqua;
     border-radius: 16px;
-     padding: 20px 10px;
-    max-width: 350px;
-    margin-bottom: 20px;
+     padding: 10px 8px;
+    max-width: 300px;
+    
     text-align: left;
     margin: 0 auto; 
 }
-
-
-
 
 
 
