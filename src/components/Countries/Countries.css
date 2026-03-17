@@ -1,5 +1,4 @@
-
-.countries{
+.countries {
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -7,10 +6,17 @@
 }
 
 
-.textCenter{
+.textCenter {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 18px;
     font-size: 40px;
     color: Aqua;
-    font-weight:bolder;
+    font-weight: bolder;
+}
+
+
+.visited-flags-container img {
+    width: 140px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
