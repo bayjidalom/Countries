@@ -14,9 +14,31 @@
     font-weight: bolder;
 }
 
+.margin-auto {
+    text-align: center;
+}
+
 
 .visited-flags-container img {
     width: 140px;
     margin-right: 10px;
     margin-bottom: 10px;
+}
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    .countries {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .textCenter {
+        margin-bottom: 15px;
+        font-size: 35px;
+        color: aqua;
+        font-weight: bolder;
+    }
+
 }
